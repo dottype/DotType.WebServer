@@ -10,3 +10,6 @@
 [submodule "SourceCodes/Middleware/DotType.WebServer.Favicon"]
 	path = SourceCodes/Middleware/DotType.WebServer.Favicon
 	url = https://github.com/dottype/DotType.WebServer.Favicon
+[submodule "SourceCodes/Middleware/DotType.WebServer.Cookie"]
+	path = SourceCodes/Middleware/DotType.WebServer.Cookie
+	url = https://github.com/dottype/DotType.WebServer.Cookie
