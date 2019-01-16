@@ -1,5 +1,5 @@
-import { IHttpContext } from "../../DotType.Hosting/Interfaces/IHttpContext";
-import { Exception } from "../../DotType/Exception";
+import { IHttpContext } from "./IHttpContext";
+import { Exception } from "../../Packages/DotType/Exceptions/Exception";
 
 /**
  * Represents the interface used by all server middleware.

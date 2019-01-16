@@ -1,7 +1,8 @@
 import { IServerResponse } from "./Interfaces/IServerResponse";
 import { ServerResponse } from "http";
-import { NameValueObject } from "dottype/DotType.Utils/NameValueObject";
-import { Collection } from "dottype/DotType/Collections/Collection<T>";
+import { NameValueObject } from "../Packages/DotType.Utils/NameValueObject";
+import { Collection } from "../Packages/DotType/Collections/Collection<T>";
+import { ArgumentNullException } from "../Packages/DotType/Exceptions/ArgumentNullException";
 
 /** Represents a http context response class */
 export class Response implements IServerResponse
@@ -36,7 +37,10 @@ export class Response implements IServerResponse
      */
     constructor(serverResponse: ServerResponse)
     {
-        Check.IsNullOrUndefined(serverResponse);
+        if(serverResponse == null || serverResponse == undefined)
+        {
+            throw new ArgumentNullException("serverResponse");
+        }
         
         this.serverResponse = serverResponse;
     }
@@ -74,8 +78,14 @@ export class Response implements IServerResponse
 
     public SetHeader(name: string, value: string)
     {
-        Check.IsNullOrUndefined(name);
-        Check.IsNullOrUndefined(value);
+        if(name == null || name == undefined)
+        {
+            throw new ArgumentNullException("name");
+        }
+        if(value == null || value == undefined)
+        {
+            throw new ArgumentNullException("value");
+        }
 
         this.headersBuffer.Add(new NameValueObject(name, value));
     }

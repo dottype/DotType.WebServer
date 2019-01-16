@@ -1,7 +1,8 @@
-import { IServerRequest } from "./Interfaces/IServerRequest"
 import { IncomingMessage } from "http";
-import { Collection } from "../DotType/Collection<T>";
-import { NameValueObject } from "../DotType/NameValueObject";
+import { IServerRequest } from "./Interfaces/IServerRequest"
+import { Collection } from "../Packages/DotType/Collections/Collection<T>";
+import { NameValueObject } from "../Packages/DotType.Utils/NameValueObject";
+import { ArgumentNullException } from "../Packages/DotType/Exceptions/ArgumentNullException";
 
 export class Request implements IServerRequest
 {
@@ -18,7 +19,10 @@ export class Request implements IServerRequest
      */
     constructor(incomingMessage: IncomingMessage)
     {
-        Check.IsNullOrUndefined(incomingMessage);
+        if(incomingMessage == null || incomingMessage == undefined)
+        {
+            throw new ArgumentNullException("incomingMessage");
+        }
        
         for(var item in incomingMessage.headers) 
         {

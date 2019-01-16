@@ -1,4 +1,4 @@
-import { Collection } from "../../DotType/Collection<T>";
+import { Collection } from "../../Packages/DotType/Collections/Collection<T>";
 
 /** interface for a server response */
 export interface IServerResponse

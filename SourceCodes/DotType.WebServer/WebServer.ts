@@ -1,11 +1,12 @@
 import { ServerResponse, Server, IncomingMessage } from "http";
 import { IMiddleware } from "./Interfaces/IMiddleware";
-import { Exception } from "../DotType/Exception";
 import { HttpContext } from "../DotType.WebServer/HttpContext";
 import { Response } from "./Response";
 import { Request } from "./Request";
 import { IWebServer } from "./Interfaces/IWebServer";
-import * as ConfigurationFile from "../Configuration/Configuration.json"; 
+import { ArgumentNullException } from "../Packages/DotType/Exceptions/ArgumentNullException";
+import { Exception } from "../Packages/DotType/Exceptions/Exception";
+import * as ConfigurationFile from "./Configuration/Configuration.json";
 
 /**
  * Base clas of DotType server
@@ -27,7 +28,10 @@ export class WebServer implements IWebServer
      */
     public UseMiddleware(middleware: IMiddleware): WebServer
     {
-        Check.IsNullOrUndefined(middleware);
+        if(middleware == null || middleware == undefined)
+        {
+            throw new ArgumentNullException("middleware");
+        }
 
         for(let item of this.middleware)
         {
