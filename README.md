@@ -1,5 +1,5 @@
 # DotType.WebServer
-DotType.js is a lightweight, fast [Node.js](https://nodejs.org/en) based web server written 
+DotType.WebServer is a lightweight, fast [Node.js](https://nodejs.org/en) based web server written 
 in [Typescript](https://www.typescriptlang.org).
 
 ## Build
@@ -12,7 +12,7 @@ directory in bash and run the following
 command:
 
 ```
-node --inspect Program
+node Program
 ```
 
 ## Using
