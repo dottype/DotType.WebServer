@@ -28,7 +28,7 @@ export class WebServer implements IWebServer
      */
     public UseMiddleware(middleware: IMiddleware): WebServer
     {
-        if(middleware == null || middleware == undefined)
+        if(middleware == null)
         {
             throw new ArgumentNullException("middleware");
         }

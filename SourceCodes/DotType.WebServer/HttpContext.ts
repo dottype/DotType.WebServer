@@ -19,11 +19,11 @@ export class HttpContext implements IHttpContext
      */
     constructor(request: IServerRequest, response: IServerResponse)
     {
-        if(request == null || request == undefined)
+        if(request == null)
         {
             throw new ArgumentNullException("request");
         }
-        if(response == null || response == undefined)
+        if(response == null)
         {
             throw new ArgumentNullException("response");
         }

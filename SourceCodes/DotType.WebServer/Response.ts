@@ -37,7 +37,7 @@ export class Response implements IServerResponse
      */
     constructor(serverResponse: ServerResponse)
     {
-        if(serverResponse == null || serverResponse == undefined)
+        if(serverResponse == null)
         {
             throw new ArgumentNullException("serverResponse");
         }
@@ -78,11 +78,11 @@ export class Response implements IServerResponse
 
     public SetHeader(name: string, value: string)
     {
-        if(name == null || name == undefined)
+        if(name == null)
         {
             throw new ArgumentNullException("name");
         }
-        if(value == null || value == undefined)
+        if(value == null)
         {
             throw new ArgumentNullException("value");
         }

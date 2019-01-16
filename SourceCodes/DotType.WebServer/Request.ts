@@ -19,7 +19,7 @@ export class Request implements IServerRequest
      */
     constructor(incomingMessage: IncomingMessage)
     {
-        if(incomingMessage == null || incomingMessage == undefined)
+        if(incomingMessage == null)
         {
             throw new ArgumentNullException("incomingMessage");
         }
