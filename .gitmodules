@@ -7,3 +7,6 @@
 [submodule "SourceCodes/Packages/DotType.Utils"]
 	path = SourceCodes/Packages/DotType.Utils
 	url = https://github.com/dottype/DotType.Utils
+[submodule "SourceCodes/Middleware/DotType.WebServer.Favicon"]
+	path = SourceCodes/Middleware/DotType.WebServer.Favicon
+	url = https://github.com/dottype/DotType.WebServer.Favicon
