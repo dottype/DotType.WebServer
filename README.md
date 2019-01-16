@@ -1,2 +1,2 @@
-# DotType.WebServer
+# WebServer
 Node.js based webserver for DotType
