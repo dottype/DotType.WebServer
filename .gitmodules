@@ -13,3 +13,6 @@
 [submodule "SourceCodes/Middleware/DotType.WebServer.Cookie"]
 	path = SourceCodes/Middleware/DotType.WebServer.Cookie
 	url = https://github.com/dottype/DotType.WebServer.Cookie
+[submodule "SourceCodes/Middleware/DotType.WebServer.Session"]
+	path = SourceCodes/Middleware/DotType.WebServer.Session
+	url = https://github.com/dottype/DotType.WebServer.Session
