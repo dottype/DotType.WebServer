@@ -4,3 +4,6 @@
 [submodule "SourceCodes/Packages/DotType.IO"]
 	path = SourceCodes/Packages/DotType.IO
 	url = https://github.com/dottype/DotType.IO
+[submodule "SourceCodes/Packages/DotType.Utils"]
+	path = SourceCodes/Packages/DotType.Utils
+	url = https://github.com/dottype/DotType.Utils
