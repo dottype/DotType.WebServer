@@ -46,7 +46,7 @@ export class WebServer implements IWebServer
     }
 
     /** Runs the server */
-    public async Run(): Promise<void>
+    public async RunAsync(): Promise<void>
     {
         this.configuration.WebServer.Http.Enabled ? await this.CreateHttpServerAsync() : null;
         this.configuration.WebServer.Https.Enabled ? await this.CreateHttpsServerAsync() : null;
@@ -57,7 +57,7 @@ export class WebServer implements IWebServer
     }
 
     /** Creates HttpServer. */
-    private CreateHttpServerAsync(): void
+    private async CreateHttpServerAsync(): Promise<void>
     {
         var http = require('http');
         var httpServer = http.createServer();
@@ -83,6 +83,7 @@ export class WebServer implements IWebServer
         httpsServer.on('request', async (request: IncomingMessage, response: ServerResponse) => await this.ParseRequestAsync(request, response, httpsServer));
         httpsServer.on('error', async (exception: Exception) => await this.ParseExceptionAsync(exception));
         httpsServer.listen(this.configuration.WebServer.Https.Port);
+        console.log(this.configuration.WebServer.Https.Port);
     }
     
     /** Parses request */
@@ -116,7 +117,7 @@ export class WebServer implements IWebServer
         catch (exception) 
         {
             await this.ParseExceptionAsync(exception);
-        }
+        }     
     }
 
     /** Parses general server exception  */

@@ -2,5 +2,5 @@
 export interface IWebServer
 {
     /** Runs the web server. */
-    Run(): void;
+    RunAsync(): void;
 }
