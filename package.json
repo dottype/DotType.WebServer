@@ -1,17 +1,22 @@
 {
     "name": "dottype.webserver",
-    "version": "0.0.1",
+    "version": "0.0.3",
     "description": "Node.js based web server for DotType",
     "author": "DotType",
     "license": "Apache-2.0",
-    "repository": {
+    "repository": 
+    {
         "type": "git",
         "url": "git+https://github.com/dottype/DotType.WebServer.git"
     },
-    "dependencies": {
-        "@types/node": "^10.12.18",
+    "dependencies": 
+    {
         "dottype": "0.0.12",
         "dottype.io": "0.0.1",
         "dottype.utils": "0.0.1"
+    },
+    "devDependencies": 
+    {
+        "@types/node": "^10.12.18"
     }
 }
