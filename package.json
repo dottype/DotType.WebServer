@@ -9,6 +9,7 @@
         "url": "git+https://github.com/dottype/DotType.WebServer.git"
     },
     "dependencies": {
+        "@types/node": "^10.12.18",
         "dottype": "0.0.12",
         "dottype.io": "0.0.1",
         "dottype.utils": "0.0.1"
