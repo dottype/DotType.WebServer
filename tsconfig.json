@@ -7,13 +7,9 @@
       "watch": true,
       "resolveJsonModule": true,
       "removeComments": true,
-      "sourceMap": true,
+      //"sourceMap": true,
       "strict": true,
-      "experimentalDecorators": true
-    },
-    "exclude": 
-    [
-      "node_modules",
-      "Build"
-    ]
+      "experimentalDecorators": true,
+      "declaration": true
+    }
 }
