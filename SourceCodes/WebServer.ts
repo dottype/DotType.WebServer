@@ -3,7 +3,7 @@ import { IMiddleware } from "./Interfaces/IMiddleware";
 import { HttpContext } from "./HttpContext";
 import { Response } from "./Response";
 import { Request } from "./Request";
-import { IWebServer } from "./Interfaces/IWebServer";
+import { IWebServer } from "dottype.hosting/Interfaces/IWebServer";
 import { ArgumentNullException } from "dottype/Exceptions/ArgumentNullException";
 import { Exception } from "dottype/Exceptions/Exception";
 import * as ConfigurationFile from "./Configuration/Configuration.json";

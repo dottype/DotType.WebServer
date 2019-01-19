@@ -1,6 +1,6 @@
-import { IHttpContext } from "./Interfaces/IHttpContext";
-import { IServerResponse } from "./Interfaces/IServerResponse";
-import { IServerRequest } from "./Interfaces/IServerRequest";
+import { IHttpContext } from "dottype.hosting/Interfaces/IHttpContext";
+import { IServerResponse } from "dottype.hosting/Interfaces/IServerResponse";
+import { IServerRequest } from "dottype.hosting/Interfaces/IServerRequest";
 import { ArgumentNullException } from "dottype/Exceptions/ArgumentNullException";
 
 /** Represents a web server  http context. */

@@ -1,4 +1,4 @@
-import { IServerResponse } from "./Interfaces/IServerResponse";
+import { IServerResponse } from "dottype.hosting/Interfaces/IServerResponse";
 import { ServerResponse } from "http";
 import { NameValueObject } from "dottype.utils/NameValueObject";
 import { Collection } from "dottype/Collections/Collection<T>";

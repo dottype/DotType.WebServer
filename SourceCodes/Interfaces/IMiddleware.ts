@@ -1,4 +1,4 @@
-import { IHttpContext } from "./IHttpContext";
+import { IHttpContext } from "dottype.hosting/Interfaces/IHttpContext";
 import { Exception } from "dottype/Exceptions/Exception";
 
 /**

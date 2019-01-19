@@ -1,5 +1,5 @@
 import { IncomingMessage } from "http";
-import { IServerRequest } from "./Interfaces/IServerRequest"
+import { IServerRequest } from "dottype.hosting/Interfaces/IServerRequest"
 import { Collection } from "dottype/Collections/Collection<T>";
 import { NameValueObject } from "dottype.utils/NameValueObject";
 import { ArgumentNullException } from "dottype/Exceptions/ArgumentNullException";
