@@ -1,6 +1,6 @@
 {
     "name": "dottype.webserver",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Node.js based web server for DotType",
     "author": "DotType",
     "license": "Apache-2.0",
