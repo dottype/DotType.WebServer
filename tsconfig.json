@@ -6,7 +6,6 @@
       "outDir": "./Build", 
       "watch": true,
       "resolveJsonModule": true,
-      "removeComments": true,
       //"sourceMap": true,
       "strict": true,
       "experimentalDecorators": true,
