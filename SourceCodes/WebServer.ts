@@ -1,11 +1,11 @@
 import { ServerResponse, Server, IncomingMessage } from "http";
 import { IMiddleware } from "./Interfaces/IMiddleware";
-import { HttpContext } from "../DotType.WebServer/HttpContext";
+import { HttpContext } from "./HttpContext";
 import { Response } from "./Response";
 import { Request } from "./Request";
 import { IWebServer } from "./Interfaces/IWebServer";
-import { ArgumentNullException } from "../Packages/DotType/Exceptions/ArgumentNullException";
-import { Exception } from "../Packages/DotType/Exceptions/Exception";
+import { ArgumentNullException } from "dottype/Exceptions/ArgumentNullException";
+import { Exception } from "dottype/Exceptions/Exception";
 import * as ConfigurationFile from "./Configuration/Configuration.json";
 
 /**

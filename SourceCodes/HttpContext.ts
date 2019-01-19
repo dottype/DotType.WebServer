@@ -1,7 +1,7 @@
 import { IHttpContext } from "./Interfaces/IHttpContext";
 import { IServerResponse } from "./Interfaces/IServerResponse";
 import { IServerRequest } from "./Interfaces/IServerRequest";
-import { ArgumentNullException } from "../Packages/DotType/Exceptions/ArgumentNullException";
+import { ArgumentNullException } from "dottype/Exceptions/ArgumentNullException";
 
 /** Represents a web server  http context. */
 export class HttpContext implements IHttpContext

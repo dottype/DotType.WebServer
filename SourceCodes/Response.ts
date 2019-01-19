@@ -1,8 +1,8 @@
 import { IServerResponse } from "./Interfaces/IServerResponse";
 import { ServerResponse } from "http";
-import { NameValueObject } from "../Packages/DotType.Utils/NameValueObject";
-import { Collection } from "../Packages/DotType/Collections/Collection<T>";
-import { ArgumentNullException } from "../Packages/DotType/Exceptions/ArgumentNullException";
+import { NameValueObject } from "dottype.utils/NameValueObject";
+import { Collection } from "dottype/Collections/Collection<T>";
+import { ArgumentNullException } from "dottype/Exceptions/ArgumentNullException";
 
 /** Represents a http context response class */
 export class Response implements IServerResponse

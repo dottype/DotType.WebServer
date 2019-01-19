@@ -1,8 +1,8 @@
 import { IncomingMessage } from "http";
 import { IServerRequest } from "./Interfaces/IServerRequest"
-import { Collection } from "../Packages/DotType/Collections/Collection<T>";
-import { NameValueObject } from "../Packages/DotType.Utils/NameValueObject";
-import { ArgumentNullException } from "../Packages/DotType/Exceptions/ArgumentNullException";
+import { Collection } from "dottype/Collections/Collection<T>";
+import { NameValueObject } from "dottype.utils/NameValueObject";
+import { ArgumentNullException } from "dottype/Exceptions/ArgumentNullException";
 
 export class Request implements IServerRequest
 {

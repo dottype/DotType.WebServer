@@ -1,5 +1,5 @@
-import { Collection } from "../../Packages/DotType/Collections/Collection<T>";
-import { NameValueObject } from "../../Packages/DotType.Utils/NameValueObject";
+import { Collection } from "dottype/Collections/Collection<T>";
+import { NameValueObject } from "dottype.utils/NameValueObject";
 
 /** Interface for a server request */
 export interface IServerRequest
